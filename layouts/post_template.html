@@ -1,0 +1,17 @@
+{{$ embedin /layouts/base.html as maincontent }}
+
+{{$ config }}
+title: {{$ child.config.title }}
+{{$ endconfig}}
+
+<div class="entry">
+    {{$ maincontent }}
+</div>
+
+<h4>Latest posts:</h4>
+
+{{$ for post in /backlift/toc/posts/*.html | public True | sort modified | first 5 }}
+    <a href="{{$ post.url }}">{{$ post.config.title }}</a> <br />
+{{$ endfor }}
+
+

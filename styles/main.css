@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6em;
+  font-family: Georgia, serif;
+  color: #222;
+  background: #fafafa;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#header {
+  font-size: 0.9em
+}
+
+.entry {
+  margin-bottom: 60px;
+}
+
+.container {
+  padding: 3%;
+  width: 94%;
+}
+
+.row {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 650px;
+  clear: both;
+}
+
+.floatcontainer {
+  float: left;
+  width: 100%;
+}
+
+#header .floatcontainer {
+  margin-bottom: 30px;
+}
+
+#nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+.date {
+  font-weight: 400; 
+  font-size: 0.6em; 
+  color: #777;
+}

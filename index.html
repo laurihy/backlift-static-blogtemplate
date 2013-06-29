@@ -1,0 +1,15 @@
+{{$ embedin layouts/base.html as maincontent }}
+
+{{$ config }}
+title: 'My Blog Title'
+{{$ endconfig }}
+
+{{$ for post in /backlift/toc/posts/*.html | public True | sort modified }}
+
+    <div class="entry">
+        <h2>{{$ post.config.title }} <br /><span class="date">on {{$ post.modified }}</span></h2>
+        <p>{{$ post.config.intro }} <a href="{{$ post.url }}">Read more...</a></p>
+    </div>
+
+{{$ endfor }}
+

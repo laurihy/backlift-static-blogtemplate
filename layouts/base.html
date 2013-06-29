@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>{{$ child.config.title }}</title>
+  
+    {{$ styles }}
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+  </head>
+  <body>
+    
+  <div class="container">
+    <div class="row" id="header">
+      
+      <div class="floatcontainer">      
+
+        <h3 class="left">My Blog Title</h3>
+        <ul class="right" id="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+      {{$ maincontent }}
+    </div>
+
+  </div>
+    
+  </body>
+</html>
